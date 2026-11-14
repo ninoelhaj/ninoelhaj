@@ -4,7 +4,7 @@ import os
 import urllib.request
 from xml.sax.saxutils import escape
 
-LOGIN = "vortexturize-ai"
+LOGIN = "ninoelhaj"
 DEPOTS = [("carte-paperasse.svg", ["paperasse"]), ("carte-crochetage.svg", ["Crochetage", "ILikeBaylife"])]
 SORTIE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "assets", "cartes")
 ROUGE = "#E8000B"
