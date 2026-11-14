@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/langages.svg" alt="TypeScript, Python, React Native, OpenCV" width="100%">
+  <img src="assets/rose-barbele.png" alt="Rose rouge prise dans du fil barbelé" width="80%">
 </p>
 
 <p align="center">
