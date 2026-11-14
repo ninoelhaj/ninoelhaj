@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/rose-barbele.png" alt="Rose rouge prise dans du fil barbelé" width="80%">
+  <img src="assets/dragon.svg" alt="Dragon doré qui crache du feu" width="100%">
 </p>
 
 <img src="assets/titre-projets.svg" alt="Projets" width="100%">
