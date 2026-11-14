@@ -7,13 +7,13 @@
 </p>
 
 <p align="center">
-  <img src="assets/rose-barbele.png" alt="Rose rouge prise dans du fil barbelé" width="80%">
-</p>
-
-<p align="center">
   <a href="https://github.com/ninoelhaj?tab=followers"><img src="https://img.shields.io/github/followers/ninoelhaj?style=flat-square&logo=github&logoColor=white&label=abonn%C3%A9s&labelColor=5c0614&color=b3122b" alt="abonnés"></a>
   <a href="https://github.com/ninoelhaj?tab=repositories"><img src="https://img.shields.io/github/stars/ninoelhaj?style=flat-square&logo=github&logoColor=white&label=%C3%A9toiles&labelColor=5c0614&color=b3122b" alt="étoiles"></a>
   <a href="https://ko-fi.com/sk8rt"><img src="https://img.shields.io/badge/ko--fi-sk8rt-b3122b?style=flat-square&logo=kofi&logoColor=white&labelColor=5c0614" alt="Ko-fi"></a>
+</p>
+
+<p align="center">
+  <img src="assets/rose-barbele.png" alt="Rose rouge prise dans du fil barbelé" width="80%">
 </p>
 
 <img src="assets/titre-projets.svg" alt="Projets" width="100%">
