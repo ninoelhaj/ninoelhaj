@@ -1,5 +1,13 @@
 <p align="center">
-  <img src="assets/entete.svg" alt="SK8RT, dev indé : TypeScript, Python, React Native, OpenCV, France" width="100%">
+  <img src="assets/entete.svg" alt="SK8RT" width="100%">
+</p>
+
+<p align="center">
+  <img src="assets/mains.png" alt="Deux mains gantées de rouge chromé, bracelets d'argent" width="62%">
+</p>
+
+<p align="center">
+  <img src="assets/langages.svg" alt="TypeScript, Python, React Native, OpenCV" width="100%">
 </p>
 
 <p align="center">
@@ -11,7 +19,7 @@
 <img src="assets/titre-qui.svg" alt="Qui suis-je" width="100%">
 
 <p align="center">
-  <b>sk8rt</b>, dev indé basé en France. Je code en <b>TypeScript</b> et en <b>Python</b> :<br>
+  Je suis <b>sk8rt</b> et je code en <b>TypeScript</b> et en <b>Python</b> :<br>
   apps mobiles <b>React Native / Expo</b>, outils <b>Windows</b>, vision par ordinateur avec <b>OpenCV</b>.
 </p>
 
@@ -25,7 +33,7 @@
 <img src="assets/titre-arsenal.svg" alt="Arsenal" width="100%">
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=ts,js,react,nodejs,python,opencv,sqlite,androidstudio,windows,git,github,vscode&theme=dark&perline=12" alt="TypeScript, JavaScript, React, Node.js, Python, OpenCV, SQLite, Android Studio, Windows, Git, GitHub, VS Code">
+  <img src="assets/arsenal.svg" alt="TypeScript, JavaScript, React, Node.js, Python, OpenCV, SQLite, Android Studio, Windows, Git, GitHub, VS Code" width="100%">
 </p>
 
 <img src="assets/titre-activite.svg" alt="Activité" width="100%">
@@ -39,6 +47,10 @@
 </p>
 
 <img src="assets/separateur.svg" alt="" width="100%">
+
+<p align="center">
+  <img src="assets/script-kiddies.svg" alt="Script kiddies" width="100%">
+</p>
 
 <p align="center">
   <a href="https://ko-fi.com/sk8rt"><img src="assets/kofi.svg" alt="Soutenir sur Ko-fi" width="60%"></a>
