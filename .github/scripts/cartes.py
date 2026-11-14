@@ -7,7 +7,8 @@ from xml.sax.saxutils import escape
 LOGIN = "ninoelhaj"
 DEPOTS = [("carte-paperasse.svg", ["paperasse"]), ("carte-crochetage.svg", ["Crochetage", "ILikeBaylife"])]
 SORTIE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "assets", "cartes")
-ROUGE = "#E8000B"
+ROUGE = "#b3122b"
+TEXTE = "#8b8f99"
 POLICE = "'Segoe UI',Ubuntu,'Helvetica Neue',Arial,sans-serif"
 
 ICONE_DEPOT = ("M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z")
@@ -74,24 +75,24 @@ def graphique(jours):
     s = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">',
          f'<defs><linearGradient id="aire" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{ROUGE}" stop-opacity=".55"/>'
          f'<stop offset="1" stop-color="{ROUGE}" stop-opacity=".04"/></linearGradient></defs>',
-         f'<rect x=".5" y=".5" width="{W - 1}" height="{H - 1}" rx="6" fill="#0d1117" stroke="{ROUGE}"/>',
-         f'<text x="{W / 2}" y="38" text-anchor="middle" font-family="{POLICE}" font-size="18" font-weight="600" fill="#ffffff">Mes contributions</text>']
+         f'<rect x=".5" y=".5" width="{W - 1}" height="{H - 1}" rx="6" fill="none" stroke="{ROUGE}"/>',
+         f'<text x="{W / 2}" y="38" text-anchor="middle" font-family="{POLICE}" font-size="18" font-weight="600" fill="{TEXTE}">Mes contributions</text>']
     for k in range(5):
         y = y1 - (y1 - y0) * k / 4
-        s.append(f'<line x1="{x0}" y1="{y:.1f}" x2="{x1}" y2="{y:.1f}" stroke="#ffffff" stroke-opacity=".12" stroke-dasharray="4 4"/>')
-        s.append(f'<text x="{x0 - 12}" y="{y + 4:.1f}" text-anchor="end" font-family="{POLICE}" font-size="11" fill="#ffffff">{haut * k // 4}</text>')
+        s.append(f'<line x1="{x0}" y1="{y:.1f}" x2="{x1}" y2="{y:.1f}" stroke="{TEXTE}" stroke-opacity=".12" stroke-dasharray="4 4"/>')
+        s.append(f'<text x="{x0 - 12}" y="{y + 4:.1f}" text-anchor="end" font-family="{POLICE}" font-size="11" fill="{TEXTE}">{haut * k // 4}</text>')
     for i, j in enumerate(jours):
         if i % 3 == 0 or i == n - 1:
             x = pts[i][0]
-            s.append(f'<line x1="{x:.1f}" y1="{y0}" x2="{x:.1f}" y2="{y1}" stroke="#ffffff" stroke-opacity=".05"/>')
-            s.append(f'<text x="{x:.1f}" y="{y1 + 20}" text-anchor="middle" font-family="{POLICE}" font-size="11" fill="#ffffff">{int(j["date"][8:])}</text>')
+            s.append(f'<line x1="{x:.1f}" y1="{y0}" x2="{x:.1f}" y2="{y1}" stroke="{TEXTE}" stroke-opacity=".05"/>')
+            s.append(f'<text x="{x:.1f}" y="{y1 + 20}" text-anchor="middle" font-family="{POLICE}" font-size="11" fill="{TEXTE}">{int(j["date"][8:])}</text>')
     courbe = lisse(pts)
     s.append(f'<path d="{courbe} L{pts[-1][0]:.1f},{y1} L{pts[0][0]:.1f},{y1} Z" fill="url(#aire)"/>')
     s.append(f'<path d="{courbe}" fill="none" stroke="{ROUGE}" stroke-width="2.5"/>')
     for x, y in pts:
-        s.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="4" fill="#ffffff"/>')
-    s.append(f'<text x="{(x0 + x1) / 2}" y="{H - 18}" text-anchor="middle" font-family="{POLICE}" font-size="12" fill="#ffffff">Jours</text>')
-    s.append(f'<text transform="translate(24,{(y0 + y1) / 2}) rotate(-90)" text-anchor="middle" font-family="{POLICE}" font-size="12" fill="#ffffff">Contributions</text>')
+        s.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="4" fill="{TEXTE}"/>')
+    s.append(f'<text x="{(x0 + x1) / 2}" y="{H - 18}" text-anchor="middle" font-family="{POLICE}" font-size="12" fill="{TEXTE}">Jours</text>')
+    s.append(f'<text transform="translate(24,{(y0 + y1) / 2}) rotate(-90)" text-anchor="middle" font-family="{POLICE}" font-size="12" fill="{TEXTE}">Contributions</text>')
     s.append("</svg>")
     return "\n".join(s)
 
