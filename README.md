@@ -31,7 +31,7 @@
 <p align="center">
   <a href="https://github.com/ninoelhaj/paperasse"><img src="https://img.shields.io/badge/paperasse-E8000B?style=for-the-badge&logo=android&logoColor=white" alt="Paperasse"></a>
   <a href="https://github.com/ninoelhaj/crochetage"><img src="https://img.shields.io/badge/crochetage-E8000B?style=for-the-badge&logo=windows&logoColor=white" alt="Crochetage"></a>
-  <a href="https://ko-fi.com/paperasse"><img src="https://img.shields.io/badge/ko--fi-E8000B?style=for-the-badge&logo=kofi&logoColor=white" alt="Ko-fi"></a>
+  <a href="https://ko-fi.com/sk8rt"><img src="https://img.shields.io/badge/ko--fi-E8000B?style=for-the-badge&logo=kofi&logoColor=white" alt="Ko-fi"></a>
 </p>
 
 <br>
